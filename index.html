@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>HisobHub — Buxgalteriya xizmatlari</title>
+
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+:root{
+--bg:#0b0b0b; /* near black */
+--panel:#0f0f0f;
+--gold:#d4af37;
+--muted:#bfbfbf;
+--glass: rgba(255,255,255,0.03);
+--accent: #c9a53a;
+--radius:14px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',system-ui,Arial,sans-serif;background:var(--bg);color:#fff;-webkit-font-smoothing:antialiased}
+
+
+/* NAVBAR */
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;background:linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4));position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(255,255,255,0.03)}
+.nav-left{display:flex;align-items:center;gap:18px}
+
+
+/* Logo (SVG text based) */
+.logo-wrap{display:flex;align-items:center;gap:12px}
+.logo-svg{width:48px;height:48px}
+.brand-name{font-weight:800;color:var(--gold);font-size:20px;letter-spacing:0.6px}
+.brand-sub{font-size:12px;color:var(--muted);margin-top:2px}
+
+
+/* Nav links */
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;font-weight:600}
+.nav-links a:hover{color:var(--gold)}
+
+
+/* language switch & CTA */
+.controls{display:flex;gap:12px;align-items:center}
+.lang-btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:8px;color:var(--muted);cursor:pointer}
+.cta{background:transparent;border:1px solid var(--gold);color:var(--gold);padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+.cta:hover{background:linear-gradient(90deg, rgba(212,175,55,0.08), rgba(201,165,58,0.06))}
+
+
+/* HERO */
+.hero{padding:80px 20px;text-align:center;background:linear-gradient(180deg, rgba(13,13,13,0.6), rgba(9,9,9,0.85));border-bottom-left-radius:40px;border-bottom-right-radius:40px}
+.hero h1{font-size:40px;margin:0;color:var(--gold);letter-spacing:0.4px}
+.hero p{max-width:920px;margin:18px auto 0;color:var(--muted);font-size:18px;line-height:1.6}
+.hero-cta{margin-top:22px;display:flex;gap:12px;justify-content:center}
+.hero .btn{padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+.primary{background:var(--gold);color:#0b0b0b}
+.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+
+/* MAIN LAYOUT */
+.container{max-width:1100px;margin:36px auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:28px}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+
+
+/* Section */
+.section{background:var(--panel);padding:22px;border-radius:var(--radius);box-shadow:0 8px 40px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.03)}
+.section h2{margin:0 0 12px 0;color:var(--gold);font-size:20px}
+
+
+/* Services cards */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.svc{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+.svc h3{margin:0;color:#fff;font-size:16px}
+.svc p{color:var(--muted);font-size:14px;margin-top:8px}
+
+
+/* Pricing */
+.pricing{display:flex;gap:14px;flex-wrap:wrap}
+.plan{background:linear-gradient(180deg, rgba(212,175,55,0.06), rgba(255,255,255,0.01));padding:18px;border-radius:12px;min-width:200px;border:1px solid rgba(212,175,55,0.08)}
+.plan h4{margin:0;color:var(--gold)}
+.price{font-size:28px;font-weight:800;margin:10px 0;color:#fff}
+</html>
